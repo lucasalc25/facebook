@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     height: 200vh;
     overflow-x: scroll;
+    background-color: #F0F2F5;
 }
 
 header {
@@ -19,8 +20,9 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #ffff;
-    padding: 10px 20px;
+    padding: 10px;
     z-index: 1000;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1)
 }
 
 .header-left {
@@ -28,60 +30,99 @@ header {
     align-items: center;
 }
 
-.search-container {
-    display: flex;
-    background-color: #F0F2F5;
-    border-radius: 20px;
-    align-items: stretch;
-    width: 100%;
-    min-width: 40px;
-    min-height: 40px;
+.header-left .logo {
+    width: 50px;
+    height: 50px;
+    height: auto;
+    cursor: pointer;
 }
 
-.icon-container {
+.header-left .header-icon {
+    margin: 0 20px;
+
+}
+
+.header-left input {
+    width: 200px;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-container {
+    position: relative;
+    display: flex;
     align-items: center;
 }
 
-.input-search {
-    padding: 10px 20px;
-    border-radius: 20px;
+.search-container .search-icon {
+    position: absolute;
+    left: 15px;
+    color: #888;
+}
+
+.header-left input {
+    padding: 5px 5px 5px 40px; /* Padding left to accommodate the icon */
     border: none;
-    background-color: #F0F2F5;
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    background-color: #E4E6E9;
+    border-radius: 20px;
 }
 
 
-
-.header-right ul {
+.header-center {
     display: flex;
-    list-style-type: none;
-    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 
-#logo-face {
-    width: 50px;
-    height: 50px;
+.header-center .header-icon {
+    margin: 0 20px;
+    color: #555;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.header-center .header-icon:hover {
+    background-color: #E4E6E9;
 }
 
 .header-right {
     display: flex;
     align-items: center;
-    margin-right: 50px;
 }
 
-.header-right button {
-    background: none;
-    border: none;
-    color: white;
-    margin-left: 10px;
-    cursor: pointer;
+.header-right .header-icon {
+    margin: 0 10px;
+    color: #050505;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #E4E6EB;
+    padding: 10px;
+}
+
+.header-right .header-icon:hover {
+    background-color: #D8DADF;
 }
 
 .profile-pic {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-right: 10px;
+    cursor: pointer;
+}
+
+.profile-pic-link {
+    display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .mini-profile-pic {
@@ -127,8 +168,8 @@ header {
 
 .content {
     flex: 1;
-    margin-left: 22.5%;
-    margin-right: 22.5%;
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 20px;
     background-color: #F0F2F5;
     overflow-y: auto;
@@ -141,6 +182,7 @@ header {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1)
 }
 
 .status-update input {
@@ -168,6 +210,7 @@ header {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0,0,0,.1)
 }
 
 .post {

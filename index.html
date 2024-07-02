@@ -10,29 +10,34 @@
 <body>
     <header>
         <div class="header-left">
-            <img id="logo-face" src="logo.png" alt="Logo do Facebook">
-            <label class="search-container">
-                <span class="icon-container"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <img class="logo" src="logo.png" alt="Logo do Facebook">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 <input class="input-search" type="text" placeholder="Pesquisar no Facebook">
-            </label>
+            </div>
+        </div>
+        <div class="header-center">
+            <a href="#" class="header-icon"><i class="fas fa-home"></i></a>
+            <a href="#" class="header-icon"><i class="fas fa-tv"></i></a>
+            <a href="#" class="header-icon"><i class="fas fa-store"></i></a>
+            <a href="#" class="header-icon"><i class="fas fa-users"></i></a>
         </div>
         <div class="header-right">
-            <ul>
-                <li><i class="fa-solid fa-house"></i></i></li>
-                <li><i class="fa-solid fa-tv"></i></li>
-            </ul>
-            <img src="perfil.jpg" alt="Foto de perfil" class="profile-pic">
+            <a href="#" class="header-icon"><i class="fa-solid fa-grip"></i></a>
+            <a href="#" class="header-icon"><i class="fas fa-comments"></i></a>
+            <a href="#" class="header-icon"><i class="fas fa-bell"></i></a>
+            <a href="#" class="profile-pic-link"><img src="perfil.jpg" alt="Foto de perfil" class="profile-pic"></a>
         </div>
     </header>
     <div class="container">
         <div class="sidebar">
             <ul>
-                <li>Lucas Alcântara</li>
-                <li>Amigos</li>
-                <li>Lembranças</li>
-                <li>Salvos</li>
-                <li>Grupos</li>
-                <li>Vídeo</li>
+                <li><a href="#"><img class="mini-profile-pic" src="perfil.jpg" alt="Foto de perfil">Lucas Alcântara</a></li>
+                <li><a href="#"><i class="fa-solid fa-user-group"></i>Amigos</a></li>
+                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i>Lembranças</a></li>
+                <li><a href="#"><i class="fa-solid fa-bookmark"></i>Salvos</a></li>
+                <li><a href="#"><i class="fa-solid fa-users-rectangle"></i></i>Grupos</a></li>
+                <li><a href="#"><i class="fa-solid fa-tv"></i>Vídeo</a></li>
             </ul>
         </div>
         <main class="content">
