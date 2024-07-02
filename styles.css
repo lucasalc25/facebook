@@ -1,0 +1,190 @@
+* {
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    overflow-x: scroll;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffff;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    background-color: #F0F2F5;
+    border-radius: 20px;
+    align-items: stretch;
+    width: 100%;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.icon-container {
+    align-items: center;
+}
+
+.input-search {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #F0F2F5;
+}
+
+
+
+.header-right ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+#logo-face {
+    width: 50px;
+    height: 50px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.header-right button {
+    background: none;
+    border: none;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.mini-profile-pic {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    margin-top: 70px; /* Adjust based on header height */
+}
+
+.sidebar, .contacts {
+    position: fixed;
+    top: 70px; /* Adjust based on header height */
+    height: calc(100vh - 70px); /* Adjust based on header height */
+    width: 20%;
+    padding: 20px;
+    background-color: #F0F2F5;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.sidebar {
+    left: 0;
+}
+
+.contacts {
+    right: 0;
+}
+
+.sidebar ul, .contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li, .contacts ul li {
+    margin-bottom: 10px;
+}
+
+.content {
+    flex: 1;
+    margin-left: 22.5%;
+    margin-right: 22.5%;
+    padding: 20px;
+    background-color: #F0F2F5;
+    overflow-y: auto;
+}
+
+.status-update {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.status-update input {
+    flex: 1;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #F0F2F5;
+    border: none;
+    border-radius: 50px;
+}
+
+.status-update button {
+    background-color: #0866FF;
+    border: none;
+    color: #ffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.status-update button:hover{
+    background-color: #0861F2;
+}
+
+.posts {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    margin-left: 10px;
+}
+
+.post-author {
+    font-weight: bold;
+}
+
+.post-time {
+    color: gray;
+    font-size: 12px;
+}
